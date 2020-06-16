@@ -99,7 +99,7 @@ gulp.task('css', function () {
 					"Opera >= 12",
 					"Safari >= 6",
 				],
-				cascade: true
+				// cascade: true 
 			})
 		)
 		.pipe(webpcss())
