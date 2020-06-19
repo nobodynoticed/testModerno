@@ -234,7 +234,9 @@ function cb() {
 gulp.task('libsJs', function () {
 	return gulp.src([
 		'node_modules/jquery/dist/jquery.js',
-		'node_modules/slick-carousel/slick/slick.js'
+		'node_modules/slick-carousel/slick/slick.js',
+		'node_modules/mixitup/dist/mixitup.js',
+		'node_modules/rateyo/hz/jquery.rateyo.js'
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
@@ -248,6 +250,7 @@ gulp.task('libsCSS', function () {
 	return gulp.src([
 		'node_modules/slick-carousel/slick/slick.css',
 		'node_modules/normalize.css/normalize.css',
+		'node_modules/rateyo/hz/jquery.rateyo.css'
 	])
 		.pipe(concat('libs.min.css'))
 		.pipe(cleancss())
