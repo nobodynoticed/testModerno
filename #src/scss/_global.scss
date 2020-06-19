@@ -40,6 +40,9 @@ a {
 	text-decoration: none;
 	color: $text;
 }
+p {
+	margin: 0;
+}
 
 .container {
 	max-width: 1200px;
@@ -56,7 +59,7 @@ a {
 .title {
 	text-align: center;
 	color: $bg;
-	font-weight: 700;
+	@include f700;
 	font-size: 36px;
 	line-height: 60px;
 }
