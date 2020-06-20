@@ -394,4 +394,47 @@
 }
 // end section advantages =====================================================================
 
+// begin section author =====================================================================
+.author {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 761px;
+
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 650px;
+		width: 100%;
+		min-height: 215px;
+		background-color: $green;
+	}
+
+	&__title {
+		max-width: 260px;
+		margin-right: 45px;
+		font-size: 30px;
+		line-height: 30px;
+		color: #fff;
+	}
+
+	&__num {
+		@include f700;
+		font-size: 30px;
+	}
+
+	&__link {
+		min-width: 225px;
+		text-align: center;
+		padding: 19px 15px;
+		font-size: 18px;
+		background-color: #fff;
+	}
+}
+// end section author =====================================================================
+
 @import "media";
