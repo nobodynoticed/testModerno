@@ -473,4 +473,188 @@
 }
 // end section tutorial =====================================================================
 
+// begin  footer =====================================================================
+.footer {
+	background-color: $bg;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+
+		padding: 100px 0 80px;
+	}
+
+	&__col {
+		max-width: 270px;
+		width: 100%;
+		&.footer__col-menu {
+			max-width: 220px;
+			width: 100%;
+		}
+	}
+
+	&__col-title {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		font-size: 22px;
+		font-family: "Raleway", sans-serif;
+		font-weight: 700;
+		color: #ffffff;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 2px;
+			width: 51px;
+			height: 3px;
+			background-color: $green;
+		}
+	}
+
+	&__text {
+		color: #b7c3c8;
+		margin-bottom: 30px;
+	}
+
+	&__info {
+		padding-left: 30px;
+		margin-top: 18px;
+		@include f500;
+		color: #fff;
+		position: relative;
+		&::before {
+			content: "\f041";
+			position: absolute;
+			left: 0;
+			font-family: "icomoon";
+			color: $green;
+			font-size: 18px;
+		}
+	}
+
+	&__info-phone {
+		&::before {
+			content: "\f095";
+			position: absolute;
+			font-family: "icomoon";
+		}
+	}
+
+	&__col-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	&__col-link {
+		padding-left: 22px;
+		position: relative;
+		margin-bottom: 13px;
+		color: #b7c3c8;
+		&::before {
+			content: "\f105";
+			color: $green;
+			position: absolute;
+			left: 0;
+			font-family: "icomoon";
+			font-size: 18px;
+		}
+	}
+
+	&__social-list {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		margin-bottom: 33px;
+	}
+
+	&__social-item {
+		display: inline-block;
+		& + .footer__social-item {
+			margin-left: 7px;
+		}
+	}
+
+	&__social-link {
+		width: 28px;
+		height: 28px;
+		background-image: url(../images/css_sprites.png);
+
+		.webp &--twitter {
+			background: url("css_sprites.png") -28px -0;
+		}
+
+		.webp &--youtube {
+			background: url("css_sprites.png") -0 -28px;
+		}
+
+		.webp &--pinterest {
+			background: url("css_sprites.png") -28px -28px;
+		}
+
+		.webp &--linkedin {
+			background: url("css_sprites.png") -56px -0;
+		}
+	}
+
+	&__form-title {
+		margin-bottom: 15px;
+		color: #ffffff;
+		font-size: 20px;
+	}
+
+	&__form {
+		position: relative;
+	}
+
+	&__input {
+		border: none;
+		background-color: #2f3c43;
+		display: block;
+		width: 100%;
+		outline: transparent;
+		height: 40px;
+		color: #fff;
+		padding-left: 13px;
+		padding-right: 50px;
+		font-size: 14px;
+		&::placeholder {
+			color: #697378;
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: $green;
+		border: none;
+		height: 40px;
+		width: 43px;
+		cursor: pointer;
+		&::before {
+			content: "\f124";
+			position: absolute;
+			font-family: "icomoon";
+			color: #fff;
+			font-size: 20px;
+			top: 11px;
+			left: 13px;
+		}
+	}
+
+	&__copy {
+		border-top: 1px solid #424d53;
+	}
+
+	&__copy-text {
+		padding: 25px 0 25px;
+		text-align: center;
+		color: #919699;
+		font-size: 15px;
+	}
+}
+// end  footer =====================================================================
+
 @import "media";
