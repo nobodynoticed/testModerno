@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/_head.html')
+
+<body>
+
+	<div class="wrapper">
+		<div class="content-page new-items__content">
+
+			@@include('components/_header.html')
+			<main>
+
+				<section class="search new-items__search" style="	background-image: url(./images/search-bg.jpg);">
+					<div class="container">
+						<div class="search__inner">
+
+							<div class="search__text">
+								Premium WordPress Themes, Web Templates and Many More ...
+							</div>
+							<form class="search__form" action="/">
+								<input class="search__input" type="search" placeholder="Search Your Keywords . . ." required>
+								<button class="search__btn" type="submit">
+									<img class="search__icon" src="./images/icons/search.png" alt="">
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<div class="breadcrumbs">
+					<div class="container">
+						<div class="breadcrumbs__inner">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a class="breadcrumbs__link" href="#">Home</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__link" href="#">Product Page</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<section class="product-page">
+					<div class="container">
+						<div class="product-page__inner">
+
+
+							<aside class="aside">
+								<div class="aside__category aside__item">
+									<div class="aside__title">
+										Categories
+									</div>
+									<ul class="aside__list">
+										<li class="aside__list-item">
+											<a href="#" class="aside__link">WordPress </a> <span class="aside__count">(150)</span>
+										</li>
+										<li class="aside__list-item">
+											<a href="#" class="aside__link">Joomla</a> <span class="aside__count">(100)</span>
+										</li>
+										<li class="aside__list-item">
+											<a href="#" class="aside__link">PSD</a> <span class="aside__count">(50)</span>
+										</li>
+										<li class="aside__list-item">
+											<a href="#" class="aside__link">Plugins</a> <span class="aside__count">(60)</span>
+										</li>
+										<li class="aside__list-item">
+											<a href="#" class="aside__link">Components</a> <span class="aside__count">(40)</span>
+										</li>
+									</ul>
+								</div>
+								<div class="price-range aside__item">
+									<div class="aside__title">
+										Price Range
+									</div>
+									<form class="price-range__form">
+										<input type="text" class="js-range-slider" name="my_range" value="">
+										<button class="price-range__btn aside__btn" type="submit">Search</button>
+									</form>
+								</div>
+								<div class="top-sellers aside__item">
+									<div class="aside__title">
+										Top 10 Sellers
+									</div>
+									<div class="aside__product-item">
+
+										<div class="product-item">
+											<a class="product-item__img" href="#"
+												style="background-image: url(./images/content/product-item.jpg);"></a>
+											<div class="product-item__content">
+												<div class="product-item__name">
+													<a class="product-item__title" href="#">
+														Responsive APP
+													</a>
+													<a class="product-item__category" href="#">
+														Site Template
+													</a>
+												</div>
+												<div class="product-item__price">$19</div>
+											</div>
+											<div class="product-item__info">
+												<a class="product-item__author" href="#">
+													<div class="product-item__author-avatar"
+														style="background-image: url(images/content/user.jpg);">
+													</div>
+													<span class="product-item__author-name">Radius</span>
+												</a>
+												<div class="product-item__star">
+													<div class="rate-star"></div><span class="star-count">(05)</span>
+												</div>
+											</div>
+										</div>
+										<div class="product-item">
+											<a class="product-item__img" href="#"
+												style="background-image: url(./images/content/product-item.jpg);"></a>
+											<div class="product-item__content">
+												<div class="product-item__name">
+													<a class="product-item__title" href="#">
+														Responsive APP
+													</a>
+													<a class="product-item__category" href="#">
+														Site Template
+													</a>
+												</div>
+												<div class="product-item__price">$19</div>
+											</div>
+											<div class="product-item__info">
+												<a class="product-item__author" href="#">
+													<div class="product-item__author-avatar"
+														style="background-image: url(images/content/user.jpg);">
+													</div>
+													<span class="product-item__author-name">Radius</span>
+												</a>
+												<div class="product-item__star">
+													<div class="rate-star"></div><span class="star-count">(05)</span>
+												</div>
+											</div>
+										</div>
+										<div class="product-item">
+											<a class="product-item__img" href="#"
+												style="background-image: url(./images/content/product-item.jpg);"></a>
+											<div class="product-item__content">
+												<div class="product-item__name">
+													<a class="product-item__title" href="#">
+														Responsive APP
+													</a>
+													<a class="product-item__category" href="#">
+														Site Template
+													</a>
+												</div>
+												<div class="product-item__price">$19</div>
+											</div>
+											<div class="product-item__info">
+												<a class="product-item__author" href="#">
+													<div class="product-item__author-avatar"
+														style="background-image: url(images/content/user.jpg);">
+													</div>
+													<span class="product-item__author-name">Radius</span>
+												</a>
+												<div class="product-item__star">
+													<div class="rate-star"></div><span class="star-count">(05)</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a class="top-sellers__btn aside__btn" href="#">View All</a>
+								</div>
+							</aside>
+							<div class="product-cards">
+								<div class="product-cards__filter">
+									<div class="product-cards__filter-sort">
+										<button class="icon-sort-amount-desc"></button> Sort by: New Items <button
+											class="icon-unsorted"></button>
+									</div>
+									<div>
+										<button class="icon-th-large active"></button>
+										<button class="icon-th-list"></button>
+									</div>
+								</div>
+								<div class="product-cards__items">
+
+									<div class="product-item">
+										<a class="product-item__img" href="#"
+											style="background-image: url(./images/content/product-item.jpg);"></a>
+										<div class="product-item__content">
+											<div class="product-item__name">
+												<a class="product-item__title" href="#">
+													Responsive Mobile APP
+												</a>
+												<a class="product-item__category" href="#">
+													Site Template
+												</a>
+												<div class="product-item__text">
+													Pimply dummy text of the printing and typesetting industry.
+												</div>
+											</div>
+											<div class="product-item__price">
+												$19 <span>Sales ( 14 )</span>
+											</div>
+										</div>
+										<div class="product-item__info">
+											<a class="product-item__author" href="#">
+												<div class="product-item__author-avatar"
+													style="background-image: url(images/content/user.jpg);">
+												</div>
+												<span class="product-item__author-name">Radiustheme</span>
+											</a>
+											<div class="product-item__star">
+												<div class="rate-star"></div>(<span>05</span>)
+											</div>
+											<div class="product-item__list">
+												<a class="icon-comment-o" href="#">(<span>10</span>)</a>
+												<div class="icon-heart-o">(<span>20</span>)</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item">
+										<a class="product-item__img" href="#"
+											style="background-image: url(./images/content/product-item.jpg);"></a>
+										<div class="product-item__content">
+											<div class="product-item__name">
+												<a class="product-item__title" href="#">
+													Responsive Mobile APP
+												</a>
+												<a class="product-item__category" href="#">
+													Site Template
+												</a>
+												<div class="product-item__text">
+													Pimply dummy text of the printing and typesetting industry.
+												</div>
+											</div>
+											<div class="product-item__price">
+												$19 <span>Sales ( 14 )</span>
+											</div>
+										</div>
+										<div class="product-item__info">
+											<a class="product-item__author" href="#">
+												<div class="product-item__author-avatar"
+													style="background-image: url(images/content/user.jpg);">
+												</div>
+												<span class="product-item__author-name">Radiustheme</span>
+											</a>
+											<div class="product-item__star">
+												<div class="rate-star"></div>(<span>05</span>)
+											</div>
+											<div class="product-item__list">
+												<a class="icon-comment-o" href="#">(<span>10</span>)</a>
+												<div class="icon-heart-o">(<span>20</span>)</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item">
+										<a class="product-item__img" href="#"
+											style="background-image: url(./images/content/product-item.jpg);"></a>
+										<div class="product-item__content">
+											<div class="product-item__name">
+												<a class="product-item__title" href="#">
+													Responsive Mobile APP
+												</a>
+												<a class="product-item__category" href="#">
+													Site Template
+												</a>
+												<div class="product-item__text">
+													Pimply dummy text of the printing and typesetting industry.
+												</div>
+											</div>
+											<div class="product-item__price">
+												$19 <span>Sales ( 14 )</span>
+											</div>
+										</div>
+										<div class="product-item__info">
+											<a class="product-item__author" href="#">
+												<div class="product-item__author-avatar"
+													style="background-image: url(images/content/user.jpg);">
+												</div>
+												<span class="product-item__author-name">Radiustheme</span>
+											</a>
+											<div class="product-item__star">
+												<div class="rate-star"></div>(<span>05</span>)
+											</div>
+											<div class="product-item__list">
+												<a class="icon-comment-o" href="#">(<span>10</span>)</a>
+												<div class="icon-heart-o">(<span>20</span>)</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="pagination">
+									<ul class="pagination__list">
+										<li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a>
+										</li>
+										<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+										<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+										<li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+
+		</div>
+		@@include('components/_footer.html')
+	</div>
+	@@include('components/_scripts.html')
+</body>
+
+</html>

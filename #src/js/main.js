@@ -33,6 +33,42 @@ $(function () {
 		slidesToScroll: 4
 	});
 
-	var mixer = mixitup('.products__box');
+	$(".js-range-slider").ionRangeSlider({
+		type: "double",
+		min: 0,
+		max: 1000,
+		from: 0,
+		to: 600,
+		grid: false,
+		prefix: '$'
+	});
+
+	$('.icon-th-list').on('click', function () {
+		$('.product-item').addClass('active');
+		$('.icon-th-list').addClass('active');
+		$('.icon-th-large').removeClass('active');
+
+	});
+
+	$('.icon-th-large').on('click', function () {
+		$('.product-item').removeClass('active');
+		$('.icon-th-large').addClass('active');
+		$('.icon-th-list').removeClass('active');
+	});
+
+	$('.menu-btn').on('click', function () {
+		$('.menu__list').slideToggle();
+	});
+
+	$('.header__btn-menu').on('click', function () {
+		$('.header__box').toggleClass('active');
+	});
+
+
+
+	let mix = $('.products__box');
+	if (mix) {
+		var mixer = mixitup(mix);
+	}
 
 });

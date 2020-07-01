@@ -19,6 +19,23 @@ body {
 	font-size: 15px;
 	line-height: 24px;
 	color: $text;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content-page {
+	flex: 0 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.new-items__content {
+	background-color: #f4f6f5;
 }
 
 h1,
@@ -42,6 +59,12 @@ a {
 }
 p {
 	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 .container {
@@ -69,23 +92,55 @@ p {
 	margin-right: 13px;
 }
 
+.breadcrumbs {
+	&__inner {
+		padding: 45px 0 40px;
+	}
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&__item {
+		display: inline-block;
+		position: relative;
+		&:last-child {
+			.breadcrumbs__link {
+				color: $bg;
+			}
+		}
+		& + & {
+			padding-left: 20px;
+			&::before {
+				content: "-";
+				position: absolute;
+				left: 8px;
+				color: $green;
+			}
+		}
+	}
+
+	&__link {
+		color: #b0bec5;
+	}
+}
+
+.angle-right {
+	position: relative;
+	padding-left: 15px;
+	&::before {
+		content: "\f105";
+		font-family: "icomoon";
+		position: absolute;
+		left: 0;
+		color: $green;
+		font-size: 14px;
+	}
+}
+
 @media (max-width: 720px) {
 	.container-fluid {
 		padding: 0 15px;
 	}
 }
-
-// прибиваем футер к низу +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-.page-wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-.content-page {
-	flex: 1 0 auto;
-}
-
-.footer {
-	flex: 0 0 auto;
-}
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
